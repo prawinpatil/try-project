@@ -1,0 +1,78 @@
+<div class="container col-sm-12 " style="border: 2px solid red ; padding: 15px; border-radius: 5px">
+    <form  >
+        <div class="form-group form-group-inline">
+                <div class="row">
+                        <div class="col-sm-4">
+                                <label for="username">Name:</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="email" placeholder="Full Name" id="username">
+                            </div>
+                </div>
+        </div>
+        <div class="form-group form-group-inline">
+                <div class="row">
+                        <div class="col-sm-4">
+                                <label for="address">Address:</label>
+                            </div>
+                            <div class="col-sm-8">
+                                
+                                <textarea  id="address" cols="auto" ></textarea>
+                                
+                            </div>
+                </div>
+        </div>
+        
+        <div class="form-group form-group-inline">
+                <div class="row">
+                        <div class="col-sm-4">
+                                <label for="mobile">Mobile:</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" maxlength="10" placeholder="Mobile Number" id="mobile">
+                            </div>
+                </div>
+        </div>
+        
+        <div class="form-group form-group-inline">
+                <div class="row">
+                        <div class="col-sm-4">
+                                <label for="date">Admission Date:</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="date"  id="date" > 
+                                
+                            </div>
+                </div>
+        </div>
+        
+        <div class="form-group form-group-inline">
+                <div class="row">
+                        <div class="col-sm-4">
+                                <label for="bike">Have a Bike?</label>
+                            </div>
+                            <div class="col-sm-8">
+                                    <div class="fom-check form-check-inline">
+                                            <input type="radio" name="Bike" id="radio1" class="form-check-input" value="option1" (click)="ToggleInput(1)" >
+                                            <label for="radio1">Yes</label>
+                                    </div>
+                                    <div class="fom-check form-check-inline">
+                                            <input type="radio"  name="Bike" id="radio2" class="form-check-input" value="option2" (click)="ToggleInput(2)">
+                                            <label for="radio2">No</label>
+                                    </div>
+                                       
+                                    <input class="form-control" type="text" name="bikeNumber" placeholder="Bike Number" id="bikeNumber" *ngIf="isBike">
+                            </div>
+                </div>
+        </div>
+        
+    </form>
+    <hr>
+    <div class="row">
+            <div class="col-sm-12 offset-5">
+                        <button class="btn btn-success">
+                                        Apply
+                                    </button>
+            </div>
+        </div>
+</div>

@@ -1,0 +1,88 @@
+
+<div class="body">
+  
+    
+<div class="container-fluid">
+  <div class="row">
+    <div class="head">
+        <h1 class="display-1 text-danger"> Header </h1>
+    </div>
+  </div>
+<hr>
+  <div class="row">
+      
+        
+        
+          <div class="col-sm-6">
+            <div class="customDiv">                
+              
+            
+              <div class="list-group">
+                 
+                <div class="list-group-item list-group-item-action list-group-item-primary active">
+                    <div class="row">
+                        
+                            <button class="btn btn-primary bg-transparent" (click)="Toggle(1)" style="margin-left: 10%">
+                                Login Admin
+                            </button>
+                          
+                                           
+                            <button class="btn btn-primary bg-transparent" (click)="Toggle(2)" style="margin-left: 25px" >
+                                Apply Now
+                              </button>                                                             
+                              
+                        
+                       
+                    </div>
+                </div>
+                <div class="list-group-item ">
+                    <admin-login *ngIf=toggleLogin></admin-login>
+                    <apply-form *ngIf=toggleForm></apply-form>
+                  </div>
+                      
+                  
+                  
+                </div>
+                 
+                  
+            </div>
+            
+          </div>
+          
+            <div class="col-sm-6 ">
+              <div class="custom">
+                
+               <div class="list-group">
+                 <li class="list-group-item list-group-item-action list-group-item-primary active">Rules</li>
+                 <li class="list-group-item list-group-item-action list-group-item-primary disabled">
+                    <ul class="list-group" *ngFor="let rule of rules" >
+                        <li class="list-group-item list-group-item-secondary" >
+                            <b>{{rule}}</b>
+                           </li>
+                            
+                      
+                    </ul>
+                </li>
+                 
+
+               </div>
+               
+              </div>
+            </div>
+      
+            
+  </div>
+</div>
+<br><br><br><br>
+<hr>
+<div class="row">
+    <div class="foot col-sm-12">
+        <h6 class="display-6 text-danger ">
+          <marquee >Copyright:2020 er.prawinpatil@gmail.com </marquee>
+          </h6>
+    </div>
+  </div>
+
+
+<router-outlet></router-outlet>
+</div>
