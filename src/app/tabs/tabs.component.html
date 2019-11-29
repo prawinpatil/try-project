@@ -1,0 +1,47 @@
+
+<mat-tab-group (selectedTabChange)=tabClick($event)>
+    <mat-tab >
+      <ng-template mat-tab-label >
+        <mat-icon class="example-tab-icon">fast_forward</mat-icon>
+       
+      </ng-template>
+      
+    </mat-tab>
+  
+    <mat-tab >
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon" >dashboard</mat-icon>
+        <a [routerLink]="linkNA" >New Admission </a>
+      </ng-template>
+      
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">delete</mat-icon>
+        <a [routerLink]="linkCancel" >Cancel Admission </a>
+      </ng-template>
+  
+      Content 3
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+        <a [routerLink]="linkPayFees" >Pay Fees </a>
+      </ng-template>
+  
+      Content 3
+    </mat-tab>
+
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+        <a [routerLink]="linkDetails" >View Details </a>
+      </ng-template>
+  
+      Content 3
+    </mat-tab>
+  </mat-tab-group>
+  
